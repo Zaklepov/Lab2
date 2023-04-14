@@ -1,5 +1,4 @@
 import java.io.*;
-import java.lang.reflect.Array;
 
 public class Xor {
     public static void main(String[] arguments) {
@@ -37,7 +36,7 @@ public class Xor {
                 while (line != null) {
                     output.write(xor(line, key1));
                     line = reader.readLine();
-                    if (line != null){
+                    if (line != null) {
                         output.write(System.lineSeparator());
                     }
                 }
