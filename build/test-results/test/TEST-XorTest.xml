@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="XorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-14T07:05:20" hostname="DESKTOP-H7665NO" time="0.035">
+  <properties/>
+  <testcase name="encryption()" classname="XorTest" time="0.031"/>
+  <testcase name="Xor()" classname="XorTest" time="0.001"/>
+  <testcase name="encryption2()" classname="XorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
