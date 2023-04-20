@@ -42,8 +42,9 @@ class XorTest {
 
     @Test
     void Xor() {
-        assertEquals("Boffe*]exfn", Xor.xor("Hello World", "a"));
-        assertEquals("Hello World", Xor.xor("Boffe*]exfn", "a"));
-        assertEquals("", Xor.xor("", "a"));
+        Xor Test = new Xor();
+        assertEquals("Boffe*]exfn", Test.xor("Hello World", "a"));
+        assertEquals("Hello World", Test.xor("Boffe*]exfn", "a"));
+        assertEquals("", Test.xor("", "a"));
     }
 }

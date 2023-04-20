@@ -35,6 +35,7 @@ public class XorLauncher {
         String key;
         if (key1 == null) key = key2;
         else key = key1;
-        Xor.ciphxor(key, inputFileName, outputFileName);
+        Xor launcher = new Xor();
+        launcher.ciphxor(key, inputFileName, outputFileName);
     }
 }

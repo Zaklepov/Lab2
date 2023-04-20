@@ -5,13 +5,8 @@ public class Xor {
         XorLauncher.main(arguments);
     }
 
-    String key;
 
-    public Xor(String key) {
-        this.key = key;
-    }
-
-    public static String xor(String str, String key) {
+    public  String xor(String str, String key) {
         if (!key.matches("^[0-9a-fA-F]+$")) throw new NumberFormatException("Number should to be in decimal system");
         int keyDec = Integer.parseInt(key, 16);
         StringBuilder result = new StringBuilder();
@@ -25,7 +20,7 @@ public class Xor {
         return result.toString();
     }
 
-    public static void ciphxor(String key1, String inputFileName, String outputFileName) {
+    public void ciphxor(String key1, String inputFileName, String outputFileName) {
         BufferedReader reader;
         try {
             Writer output = new FileWriter(outputFileName);
@@ -45,8 +40,8 @@ public class Xor {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.getStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
     }
