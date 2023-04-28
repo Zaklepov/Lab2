@@ -1,4 +1,5 @@
-import org.junit.jupiter.api.Test;
+;import org.junit.jupiter.api.Test;
+
 
 
 import java.io.File;
@@ -16,11 +17,11 @@ class XorTest {
         String[] arguments = new String[5];
         arguments[0] = "-c";
         arguments[1] = "1";
-        arguments[2] = "src/input/Test1";
+        arguments[2] = "input/Test1In";
         arguments[3] = "-o";
-        arguments[4] = "src/output/out";
+        arguments[4] = "outp";
         XorLauncher.main(arguments);
-        assertEquals(-1, Files.mismatch(Path.of(arguments[4]), Path.of("src/output/Test1")));
+        assertEquals(-1, Files.mismatch(Path.of(arguments[4]), Path.of("output/Test1Out")));
         File file = new File(Path.of(arguments[4]).toUri());
         file.delete();
     }
@@ -30,11 +31,11 @@ class XorTest {
         String[] arguments = new String[5];
         arguments[0] = "-d";
         arguments[1] = "1";
-        arguments[2] = "src/input/Test2";
+        arguments[2] = "input/Test2In";
         arguments[3] = "-o";
-        arguments[4] = "src/output/out";
+        arguments[4] = "outp";
         XorLauncher.main(arguments);
-        assertEquals(-1, Files.mismatch(Path.of(arguments[4]), Path.of("src/output/Test2")));
+        assertEquals(-1, Files.mismatch(Path.of(arguments[4]), Path.of("output/Test2Out")));
         File file = new File(Path.of(arguments[4]).toUri());
         file.delete();
     }
